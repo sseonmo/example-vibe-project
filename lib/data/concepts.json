@@ -1,0 +1,23 @@
+[
+  {
+    "slug": "agent-loop",
+    "title": "에이전트 루프",
+    "summary": "Claude Code가 프롬프트를 받고, 파일을 읽고, 변경을 제안하고, 권한을 받고, 실행하는 순환 사이클.",
+    "source": "https://code.claude.com/docs/ko/overview",
+    "tags": ["loop", "core"]
+  },
+  {
+    "slug": "memory-hierarchy",
+    "title": "CLAUDE.md 메모리 계층",
+    "summary": "관리 정책 → 사용자 → 프로젝트 → 로컬 4단계로 중첩되는 지침 로드 구조.",
+    "source": "https://code.claude.com/docs/ko/memory",
+    "tags": ["memory", "claude-md"]
+  },
+  {
+    "slug": "context-portability",
+    "title": "환경 간 세션 연속성",
+    "summary": "Terminal · VS Code · Web · Mobile 간에 CLAUDE.md와 설정을 유지한 채 자유롭게 이동.",
+    "source": "https://code.claude.com/docs/ko/overview",
+    "tags": ["portability"]
+  }
+]

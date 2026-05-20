@@ -1,0 +1,38 @@
+{
+  "name": "example-vibe-project",
+  "version": "0.1.0",
+  "private": true,
+  "description": "강의 더미 프로젝트 — Claude Code 한국어 개념 시각화 페이지 + 학습용 미완성 기능",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "next": "15.1.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "15.1.4",
+    "prettier": "^3.4.2",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/postcss": "^4.0.0",
+    "postcss": "^8.5.1",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.2",
+    "jsdom": "^26.0.0",
+    "@testing-library/react": "^16.1.0"
+  }
+}
