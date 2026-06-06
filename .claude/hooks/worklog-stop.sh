@@ -23,13 +23,14 @@ fi
 
 cd "$CLAUDE_PROJECT_DIR" || exit 0
 
-# 2) 변경된 파일 수집 — 작업일지·훅 설정 자체는 '코드 변경'으로 치지 않음
+# 2) 변경된 파일 수집 — '구현(코드) 변경'만 센다.
+#    문서(docs/ 전체, 모든 *.md)와 훅·스킬 설정(.claude/)은 작업일지 대상이 아님.
 #    (porcelain 의 'XY path' 에서 앞 3글자 제거, rename 은 '-> ' 뒤가 새 경로)
 changed=$(git status --porcelain 2>/dev/null \
   | cut -c4- \
   | sed 's/^.* -> //' \
-  | grep -v -e '^docs/work-logs/' -e '^\.claude/')
-[ -n "$changed" ] || exit 0   # 코드 변경 없는 턴(질문만 등)은 조용히 통과
+  | grep -v -e '^docs/' -e '^\.claude/' -e '\.md$')
+[ -n "$changed" ] || exit 0   # 코드 변경 없는 턴(질문·문서 작업 등)은 조용히 통과
 
 # 3) 오늘자 작업일지가 마지막 코드 변경보다 최신이면 통과 (이미 기록함)
 today=$(date +%F)
