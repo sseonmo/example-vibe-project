@@ -10,7 +10,7 @@
 - 키보드 포커스(Tab)도 동작해야 함 (a11y).
 - **성공 기준**: 마우스 호버 / Tab 포커스 모두에서 툴팁이 보이고, ESC로 닫힘.
 
-## [ ] #2. `/memory-hierarchy` 페이지에 다크/라이트 토글
+## [x] #2. `/memory-hierarchy` 페이지에 다크/라이트 토글 (docs/plans/002 구현 완료)
 
 **파일**: `app/layout.tsx`, `app/memory-hierarchy/page.tsx`, 새 `components/ThemeToggle.tsx`
 
