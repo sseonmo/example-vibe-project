@@ -78,7 +78,6 @@ export function LoopDiagram() {
               markerEnd="url(#arrow)"
               opacity="0.7"
               style={{
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 ...(next ? {} : {}),
               }}
             />
