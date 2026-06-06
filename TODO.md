@@ -18,7 +18,7 @@
 - 선호 저장은 `localStorage` 하나면 충분 (쿠키 불필요).
 - **성공 기준**: 토글 후 새로고침해도 선택이 유지됨.
 
-## [ ] #3. `POST /api/feedback` 엔드포인트 완성 ⭐ (Vibe→Agentic 차이를 가장 잘 보여주는 작업)
+## [x] #3. `POST /api/feedback` 엔드포인트 완성 ⭐ (docs/plans/003 구현 완료)
 
 **파일**: `app/api/feedback/route.ts`, 새 `lib/feedback-store.ts`
 
@@ -27,3 +27,9 @@
 - 응답: 성공 시 `{ id, savedAt }`, 검증 실패 시 400 + `AppError` 응답 일관 형식.
 - 테스트 1개 추가 (검증 실패 케이스 + 성공 케이스).
 - **성공 기준**: 페이지의 피드백 폼에서 전송 → 200 응답 + "전송 완료" 표시.
+
+## [ ] #3-후속. `FeedbackForm` 실패 문구 갱신 (docs/plans/003 결정 #11에서 이연)
+
+**파일**: `components/FeedbackForm.tsx`
+
+- 실패 시 문구가 "아직 stub입니다"로 남아 있음 — API 완성 후 사실과 어긋남. 네트워크/검증 오류 안내로 1줄 수정.
